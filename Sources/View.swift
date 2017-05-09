@@ -11,9 +11,8 @@ import Foundation
 
 import RxSwift
 
-public typealias _View = View
 public protocol View: class, AssociatedObjectStore {
-  associatedtype Reactor: _Reactor
+  associatedtype Reactor: ReactorKit.Reactor
 
   var disposeBag: DisposeBag { get set }
   var reactor: Reactor? { get set }

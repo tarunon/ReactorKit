@@ -11,7 +11,6 @@ import RxSwift
 public struct NoAction {}
 public struct NoMutation {}
 
-public typealias _Reactor = Reactor
 public protocol Reactor: class, AssociatedObjectStore {
   associatedtype Action
   associatedtype Mutation = Action
